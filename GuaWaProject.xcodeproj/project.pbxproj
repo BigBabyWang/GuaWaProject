@@ -141,7 +141,6 @@
 		3EF4A4281FE0D7AF00EBB069 /* GoodsInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EF4A4271FE0D7AF00EBB069 /* GoodsInfo.xib */; };
 		3EFE82BC1FDE6B880002A104 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFE82BB1FDE6B870002A104 /* UserNotifications.framework */; };
 		B91448A5D81DBB19C8B28A28 /* libPods-GuaWaProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D58AC28D129F23E5040F62A3 /* libPods-GuaWaProject.a */; };
-		BBC7A5CF1FF22A3F00259199 /* ZMRecommendOrInvideView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC7A5CE1FF22A3F00259199 /* ZMRecommendOrInvideView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -383,8 +382,6 @@
 		3EF4A4251FE0D67900EBB069 /* GoodsInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodsInfo.m; sourceTree = "<group>"; };
 		3EF4A4271FE0D7AF00EBB069 /* GoodsInfo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoodsInfo.xib; sourceTree = "<group>"; };
 		3EFE82BB1FDE6B870002A104 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
-		BBC7A5CD1FF22A3F00259199 /* ZMRecommendOrInvideView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMRecommendOrInvideView.h; sourceTree = "<group>"; };
-		BBC7A5CE1FF22A3F00259199 /* ZMRecommendOrInvideView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMRecommendOrInvideView.m; sourceTree = "<group>"; };
 		D2C5C962B5C55E34143A2F55 /* Pods-GuaWaProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuaWaProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuaWaProject/Pods-GuaWaProject.release.xcconfig"; sourceTree = "<group>"; };
 		D58AC28D129F23E5040F62A3 /* libPods-GuaWaProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GuaWaProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E926E8C1FEEB2559FEB49DDB /* Pods-GuaWaProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuaWaProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuaWaProject/Pods-GuaWaProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -663,8 +660,6 @@
 				3E5E1EBD1FF0F07B00E98DC1 /* SitPickerView.h */,
 				3E5E1EBB1FF0F07A00E98DC1 /* SitPickerView.m */,
 				3E5E1EBC1FF0F07A00E98DC1 /* SitPickerView.xib */,
-				BBC7A5CD1FF22A3F00259199 /* ZMRecommendOrInvideView.h */,
-				BBC7A5CE1FF22A3F00259199 /* ZMRecommendOrInvideView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1174,7 +1169,6 @@
 				3E5E1EB41FF0CF0400E98DC1 /* HistoryCell.m in Sources */,
 				3EAE239E1FEBA3A5006EAE6F /* ShadowLabel.m in Sources */,
 				3E5760841FE51737004BFA7C /* jianpan.m in Sources */,
-				BBC7A5CF1FF22A3F00259199 /* ZMRecommendOrInvideView.m in Sources */,
 				3E3C1E7A1FBDB4E200B86B97 /* NSString+URLTool.m in Sources */,
 				3E3C1E521FBDB25300B86B97 /* PublicEngine.m in Sources */,
 				3E3C1E691FBDB33200B86B97 /* XMRKTransition.m in Sources */,
