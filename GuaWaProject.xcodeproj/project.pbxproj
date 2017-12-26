@@ -473,9 +473,7 @@
 		3E3C1E131FBDB25300B86B97 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				3E3C1E141FBDB25300B86B97 /* Animation */,
 				3E3C1E151FBDB25300B86B97 /* Base */,
-				3E3C1E1F1FBDB25300B86B97 /* Chat */,
 				3E3C1E201FBDB25300B86B97 /* Controller */,
 				3E3C1E211FBDB25300B86B97 /* Macro */,
 				3E3C1E281FBDB25300B86B97 /* Models */,
@@ -486,13 +484,6 @@
 				3E3C1E481FBDB25300B86B97 /* View */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		3E3C1E141FBDB25300B86B97 /* Animation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Animation;
 			sourceTree = "<group>";
 		};
 		3E3C1E151FBDB25300B86B97 /* Base */ = {
@@ -507,13 +498,6 @@
 				3EB6D6881FCAE93600241A10 /* WebViewController.xib */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		3E3C1E1F1FBDB25300B86B97 /* Chat */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Chat;
 			sourceTree = "<group>";
 		};
 		3E3C1E201FBDB25300B86B97 /* Controller */ = {
