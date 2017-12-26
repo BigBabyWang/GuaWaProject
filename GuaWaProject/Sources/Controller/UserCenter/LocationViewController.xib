@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="4082_方正粗圆_GBK.TTF">
+            <string>FZY4K--GBK1-0</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LocationViewController">
+            <connections>
+                <outlet property="_tableview" destination="Y0d-ff-h6m" id="BsK-Lk-fCm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kuang" translatesAutoresizingMaskIntoConstraints="NO" id="DP8-Tj-tJs">
+                    <rect key="frame" x="39" y="45" width="511" height="316"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y0d-ff-h6m">
+                    <rect key="frame" x="73" y="60" width="443" height="234"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="i2r-eB-ZLE"/>
+                        <outlet property="delegate" destination="-1" id="LxO-xe-Hfv"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4L-YQ-GCL">
+                    <rect key="frame" x="250.5" y="306" width="87" height="37"/>
+                    <fontDescription key="fontDescription" name="FZY4K--GBK1-0" family="FZCuYuan-M03" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="2"/>
+                    <state key="normal" title="新增地址" backgroundImage="btn_fahuo"/>
+                    <state key="highlighted" backgroundImage="btn_fahuo_liang"/>
+                    <connections>
+                        <action selector="btnAddLocationAction:" destination="-1" eventType="touchUpInside" id="aXK-ZW-xnM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="DP8-Tj-tJs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="39" id="3xN-8n-xJR"/>
+                <constraint firstItem="e4L-YQ-GCL" firstAttribute="centerX" secondItem="DP8-Tj-tJs" secondAttribute="centerX" id="Ilb-Pu-H4S"/>
+                <constraint firstItem="Y0d-ff-h6m" firstAttribute="leading" secondItem="DP8-Tj-tJs" secondAttribute="leading" constant="34" id="d18-oP-z14"/>
+                <constraint firstItem="Y0d-ff-h6m" firstAttribute="bottom" secondItem="DP8-Tj-tJs" secondAttribute="bottom" constant="-67" id="eZL-y9-ecH"/>
+                <constraint firstItem="Y0d-ff-h6m" firstAttribute="trailing" secondItem="DP8-Tj-tJs" secondAttribute="trailing" constant="-34" id="ft2-R2-tAG"/>
+                <constraint firstItem="DP8-Tj-tJs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="45" id="gHS-bH-FcA"/>
+                <constraint firstItem="Y0d-ff-h6m" firstAttribute="top" secondItem="DP8-Tj-tJs" secondAttribute="top" constant="15" id="mh5-17-7Ht"/>
+                <constraint firstItem="e4L-YQ-GCL" firstAttribute="bottom" secondItem="DP8-Tj-tJs" secondAttribute="bottom" constant="-18" id="w5h-Np-bIB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_fahuo" width="87" height="37"/>
+        <image name="btn_fahuo_liang" width="87" height="37"/>
+        <image name="kuang" width="511" height="316"/>
+    </resources>
+</document>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="4082_方正粗圆_GBK.TTF">
+            <string>FZY4K--GBK1-0</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountViewController">
+            <connections>
+                <outlet property="_tableview" destination="mN9-U0-zs7" id="DtY-BC-5T9"/>
+                <outlet property="btn_left" destination="oL8-WQ-NFf" id="hqI-AW-iRR"/>
+                <outlet property="btn_right" destination="ZuU-Cg-egC" id="9Xt-gv-Adm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kuang" translatesAutoresizingMaskIntoConstraints="NO" id="ZfW-pJ-vc3">
+                    <rect key="frame" x="39" y="45" width="511" height="316"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mN9-U0-zs7">
+                    <rect key="frame" x="73" y="60" width="443" height="234"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="EU9-OQ-DJR"/>
+                        <outlet property="delegate" destination="-1" id="eVh-wM-MSz"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YHl-Ar-dsD">
+                    <rect key="frame" x="190.5" y="0.0" width="208" height="30"/>
+                    <subviews>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZuU-Cg-egC">
+                            <rect key="frame" x="103" y="0.0" width="105" height="30"/>
+                            <fontDescription key="fontDescription" name="FZY4K--GBK1-0" family="FZCuYuan-M03" pointSize="12"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="2"/>
+                            <state key="normal" title="账户记录" backgroundImage="bg_right_normal">
+                                <color key="titleColor" red="0.41176470590000003" green="0.63137254899999995" blue="0.85882352939999995" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="bg_right_select">
+                                <color key="titleColor" red="1" green="0.93725490199999995" blue="0.64313725489999995" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnNavAction:" destination="-1" eventType="touchUpInside" id="vXF-oe-7ND"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oL8-WQ-NFf">
+                            <rect key="frame" x="0.0" y="0.0" width="103" height="30"/>
+                            <fontDescription key="fontDescription" name="FZY4K--GBK1-0" family="FZCuYuan-M03" pointSize="12"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="2"/>
+                            <state key="normal" title="账户详情" backgroundImage="bg_left_normal">
+                                <color key="titleColor" red="0.41176470590000003" green="0.63137254899999995" blue="0.85882352939999995" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="bg_left_select">
+                                <color key="titleColor" red="1" green="0.93725490199999995" blue="0.64313725489999995" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnNavAction:" destination="-1" eventType="touchUpInside" id="Px2-72-7Ke"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ZuU-Cg-egC" secondAttribute="bottom" id="05y-k6-kyB"/>
+                        <constraint firstItem="ZuU-Cg-egC" firstAttribute="bottom" secondItem="oL8-WQ-NFf" secondAttribute="bottom" id="Fnq-8m-dkP"/>
+                        <constraint firstItem="oL8-WQ-NFf" firstAttribute="top" secondItem="YHl-Ar-dsD" secondAttribute="top" id="Fy0-8G-OWt"/>
+                        <constraint firstAttribute="trailing" secondItem="ZuU-Cg-egC" secondAttribute="trailing" id="Gbo-8B-BaQ"/>
+                        <constraint firstItem="oL8-WQ-NFf" firstAttribute="leading" secondItem="YHl-Ar-dsD" secondAttribute="leading" id="N65-D0-I4v"/>
+                        <constraint firstItem="ZuU-Cg-egC" firstAttribute="top" secondItem="YHl-Ar-dsD" secondAttribute="top" id="WHt-ih-Wev"/>
+                        <constraint firstItem="ZuU-Cg-egC" firstAttribute="leading" secondItem="oL8-WQ-NFf" secondAttribute="trailing" id="dC5-xx-1Me"/>
+                        <constraint firstItem="oL8-WQ-NFf" firstAttribute="top" secondItem="ZuU-Cg-egC" secondAttribute="top" id="tW6-xY-HSP"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xsz-64-l9J">
+                    <rect key="frame" x="251" y="306" width="87" height="37"/>
+                    <fontDescription key="fontDescription" name="FZY4K--GBK1-0" family="FZCuYuan-M03" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="2"/>
+                    <state key="normal" title="去充值" backgroundImage="btn_fahuo"/>
+                    <connections>
+                        <action selector="btnRechargeAction:" destination="-1" eventType="touchUpInside" id="Udh-fO-xim"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Xsz-64-l9J" firstAttribute="bottom" secondItem="ZfW-pJ-vc3" secondAttribute="bottom" constant="-18" id="Bk8-mG-kJI"/>
+                <constraint firstItem="YHl-Ar-dsD" firstAttribute="centerX" secondItem="ZfW-pJ-vc3" secondAttribute="centerX" id="CRA-dL-X3b"/>
+                <constraint firstItem="Xsz-64-l9J" firstAttribute="centerX" secondItem="ZfW-pJ-vc3" secondAttribute="centerX" id="F3u-BB-K3B"/>
+                <constraint firstItem="mN9-U0-zs7" firstAttribute="bottom" secondItem="ZfW-pJ-vc3" secondAttribute="bottom" constant="-67" id="FlD-cL-Xct"/>
+                <constraint firstItem="ZfW-pJ-vc3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="45" id="HKp-Kr-fN7"/>
+                <constraint firstItem="mN9-U0-zs7" firstAttribute="top" secondItem="ZfW-pJ-vc3" secondAttribute="top" constant="15" id="IAc-UZ-3r9"/>
+                <constraint firstItem="mN9-U0-zs7" firstAttribute="trailing" secondItem="ZfW-pJ-vc3" secondAttribute="trailing" constant="-34" id="JWK-4y-p4V"/>
+                <constraint firstItem="YHl-Ar-dsD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KDa-BE-gET"/>
+                <constraint firstItem="mN9-U0-zs7" firstAttribute="leading" secondItem="ZfW-pJ-vc3" secondAttribute="leading" constant="34" id="VVR-cN-TzH"/>
+                <constraint firstItem="ZfW-pJ-vc3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="39" id="d6K-kn-vJz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_left_normal" width="103" height="30"/>
+        <image name="bg_left_select" width="103" height="30"/>
+        <image name="bg_right_normal" width="105" height="30"/>
+        <image name="bg_right_select" width="105" height="30"/>
+        <image name="btn_fahuo" width="87" height="37"/>
+        <image name="kuang" width="511" height="316"/>
+    </resources>
+</document>
