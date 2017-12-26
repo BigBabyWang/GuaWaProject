@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="4082_方正粗圆_GBK.TTF">
+            <string>FZY4K--GBK1-0</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="AccountListCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountListCell" rowHeight="51" id="KGk-i7-Jjw" customClass="AccountListCell">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="448" height="50.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_account" translatesAutoresizingMaskIntoConstraints="NO" id="yI6-Yg-CAX">
+                        <rect key="frame" x="0.0" y="-0.5" width="448" height="51.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信充值10元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qke-tm-OdB">
+                        <rect key="frame" x="24" y="19" width="71.5" height="14.5"/>
+                        <fontDescription key="fontDescription" name="FZY4K--GBK1-0" family="FZCuYuan-M03" pointSize="12"/>
+                        <color key="textColor" red="0.30588235289999999" green="0.43137254899999999" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-12-20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arP-AZ-uGA">
+                        <rect key="frame" x="155.5" y="19" width="64" height="14.5"/>
+                        <fontDescription key="fontDescription" name="FZY4K--GBK1-0" family="FZCuYuan-M03" pointSize="12"/>
+                        <color key="textColor" red="0.48627450979999998" green="0.61960784310000006" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+100金币" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdh-3i-J6M">
+                        <rect key="frame" x="373.5" y="19" width="49.5" height="14.5"/>
+                        <fontDescription key="fontDescription" name="FZY4K--GBK1-0" family="FZCuYuan-M03" pointSize="12"/>
+                        <color key="textColor" red="1" green="0.45098039215686275" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="arP-AZ-uGA" firstAttribute="leading" secondItem="qke-tm-OdB" secondAttribute="trailing" constant="60" id="E5v-qq-zan"/>
+                    <constraint firstItem="bdh-3i-J6M" firstAttribute="trailing" secondItem="yI6-Yg-CAX" secondAttribute="trailing" constant="-25" id="Fa2-2T-e2J"/>
+                    <constraint firstItem="qke-tm-OdB" firstAttribute="top" secondItem="yI6-Yg-CAX" secondAttribute="top" constant="19" id="IX0-hE-5UX"/>
+                    <constraint firstItem="yI6-Yg-CAX" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Rb0-1g-bu4"/>
+                    <constraint firstItem="qke-tm-OdB" firstAttribute="leading" secondItem="yI6-Yg-CAX" secondAttribute="leading" constant="24" id="Vdd-AX-ycZ"/>
+                    <constraint firstItem="yI6-Yg-CAX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="egj-eP-CG5"/>
+                    <constraint firstItem="arP-AZ-uGA" firstAttribute="centerY" secondItem="qke-tm-OdB" secondAttribute="centerY" id="uL5-oP-Zdp"/>
+                    <constraint firstItem="bdh-3i-J6M" firstAttribute="centerY" secondItem="qke-tm-OdB" secondAttribute="centerY" id="xbE-7E-nbF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="lab_date" destination="arP-AZ-uGA" id="6jf-Cy-ksc"/>
+                <outlet property="lab_money" destination="bdh-3i-J6M" id="oKz-y9-Uhz"/>
+                <outlet property="lab_title" destination="qke-tm-OdB" id="crp-wH-xRT"/>
+            </connections>
+            <point key="canvasLocation" x="101" y="63.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg_account" width="448" height="51"/>
+    </resources>
+</document>

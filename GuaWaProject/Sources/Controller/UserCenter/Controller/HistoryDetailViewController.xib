@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="4082_方正粗圆_GBK.TTF">
+            <string>FZY4K--GBK1-0</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HistoryDetailViewController">
+            <connections>
+                <outlet property="btnBack" destination="VUW-As-E1m" id="mx4-Ev-ttC"/>
+                <outlet property="image_video" destination="jGu-Qo-NvH" id="8uZ-0l-wRj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_beijing" translatesAutoresizingMaskIntoConstraints="NO" id="c6Y-mY-uCO">
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUW-As-E1m">
+                    <rect key="frame" x="10" y="10" width="30" height="29"/>
+                    <fontDescription key="fontDescription" name="FZY4K--GBK1-0" family="FZCuYuan-M03" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_historyDetial" translatesAutoresizingMaskIntoConstraints="NO" id="KBY-oz-3Ks">
+                    <rect key="frame" x="120" y="60" width="443" height="279"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jGu-Qo-NvH">
+                    <rect key="frame" x="162" y="72" width="358" height="255"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kov-j1-rt2">
+                    <rect key="frame" x="309" y="167.5" width="64" height="64"/>
+                    <state key="normal" image="btn_play_normal"/>
+                    <state key="highlighted" image="btn_play_select"/>
+                    <connections>
+                        <action selector="btnPlayAction:" destination="-1" eventType="touchUpInside" id="6fL-U9-gqr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71m-VQ-pw7">
+                    <rect key="frame" x="191" y="176.5" width="46" height="46"/>
+                    <state key="normal" image="btn_share_normal"/>
+                    <state key="highlighted" image="btn_share_select"/>
+                    <connections>
+                        <action selector="btnShareAction:" destination="-1" eventType="touchUpInside" id="6Bu-hZ-Bwa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCG-ow-ZKr">
+                    <rect key="frame" x="445" y="176.5" width="46" height="46"/>
+                    <state key="normal" image="btn_replay_normal"/>
+                    <state key="highlighted" image="btn_replay_select"/>
+                    <connections>
+                        <action selector="btnReplayAction:" destination="-1" eventType="touchUpInside" id="uBT-T6-531"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jGu-Qo-NvH" firstAttribute="centerX" secondItem="KBY-oz-3Ks" secondAttribute="centerX" id="2WS-4h-OZK"/>
+                <constraint firstItem="c6Y-mY-uCO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="492-ur-DfX"/>
+                <constraint firstItem="c6Y-mY-uCO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="867-j2-c3m"/>
+                <constraint firstItem="jGu-Qo-NvH" firstAttribute="centerY" secondItem="KBY-oz-3Ks" secondAttribute="centerY" id="DWq-Bg-0vO"/>
+                <constraint firstAttribute="trailing" secondItem="c6Y-mY-uCO" secondAttribute="trailing" id="KlF-sv-ycC"/>
+                <constraint firstItem="kov-j1-rt2" firstAttribute="centerY" secondItem="KBY-oz-3Ks" secondAttribute="centerY" id="Lnz-oV-czd"/>
+                <constraint firstItem="CCG-ow-ZKr" firstAttribute="centerY" secondItem="kov-j1-rt2" secondAttribute="centerY" id="Qv2-pW-RHH"/>
+                <constraint firstItem="kov-j1-rt2" firstAttribute="leading" secondItem="71m-VQ-pw7" secondAttribute="trailing" constant="72" id="WuZ-cF-heQ"/>
+                <constraint firstItem="jGu-Qo-NvH" firstAttribute="top" secondItem="KBY-oz-3Ks" secondAttribute="top" constant="12" id="YyC-e7-Q1k"/>
+                <constraint firstItem="kov-j1-rt2" firstAttribute="centerX" secondItem="KBY-oz-3Ks" secondAttribute="centerX" id="ZZN-0d-TNG"/>
+                <constraint firstItem="VUW-As-E1m" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="bOF-uU-89X"/>
+                <constraint firstItem="KBY-oz-3Ks" firstAttribute="leading" secondItem="c6Y-mY-uCO" secondAttribute="leading" constant="120" id="gtL-th-nG9"/>
+                <constraint firstItem="jGu-Qo-NvH" firstAttribute="leading" secondItem="KBY-oz-3Ks" secondAttribute="leading" constant="42" id="j1a-xv-PPV"/>
+                <constraint firstItem="KBY-oz-3Ks" firstAttribute="top" secondItem="c6Y-mY-uCO" secondAttribute="top" constant="60" id="lbF-9c-zvZ"/>
+                <constraint firstItem="kov-j1-rt2" firstAttribute="centerY" secondItem="71m-VQ-pw7" secondAttribute="centerY" id="pBT-KB-75g"/>
+                <constraint firstAttribute="bottom" secondItem="c6Y-mY-uCO" secondAttribute="bottom" id="qgg-KJ-glI"/>
+                <constraint firstItem="CCG-ow-ZKr" firstAttribute="leading" secondItem="kov-j1-rt2" secondAttribute="trailing" constant="72" id="v01-w0-xyG"/>
+                <constraint firstItem="VUW-As-E1m" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="vY4-to-CWX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="50.5" y="59.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_beijing" width="667" height="375"/>
+        <image name="bg_historyDetial" width="443" height="279"/>
+        <image name="btn_play_normal" width="64" height="64"/>
+        <image name="btn_play_select" width="64" height="64"/>
+        <image name="btn_replay_normal" width="46" height="46"/>
+        <image name="btn_replay_select" width="46" height="46"/>
+        <image name="btn_share_normal" width="46" height="46"/>
+        <image name="btn_share_select" width="46" height="46"/>
+    </resources>
+</document>

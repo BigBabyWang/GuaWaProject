@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="4082_方正粗圆_GBK.TTF">
+            <string>FZY4K--GBK1-0</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="MyCardsCell" reuseIdentifier="MyCardsCell" id="gTV-IL-0wX" customClass="MyCardsCell">
+            <rect key="frame" x="0.0" y="0.0" width="399" height="321"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="399" height="321"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_monthly_card" translatesAutoresizingMaskIntoConstraints="NO" id="Sfk-QM-5Yp">
+                        <rect key="frame" x="88" y="86.5" width="223" height="148"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_cards_select" translatesAutoresizingMaskIntoConstraints="NO" id="Dk0-N5-pie">
+                        <rect key="frame" x="286" y="83.5" width="23" height="25"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIP  2017  1111  2017  1210" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ohd-pj-6AR">
+                        <rect key="frame" x="101" y="206.5" width="131.5" height="14.5"/>
+                        <fontDescription key="fontDescription" name="FZY4K--GBK1-0" family="FZCuYuan-M03" pointSize="12"/>
+                        <color key="textColor" red="1" green="0.93725490196078431" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Dk0-N5-pie" firstAttribute="top" secondItem="Sfk-QM-5Yp" secondAttribute="top" constant="-3" id="6PE-qA-ZEF"/>
+                <constraint firstItem="Sfk-QM-5Yp" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Bsb-2v-EPK"/>
+                <constraint firstItem="Sfk-QM-5Yp" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="GXj-E5-t7A"/>
+                <constraint firstItem="Ohd-pj-6AR" firstAttribute="bottom" secondItem="Sfk-QM-5Yp" secondAttribute="bottom" constant="-14" id="YLy-RF-XQK"/>
+                <constraint firstItem="Ohd-pj-6AR" firstAttribute="leading" secondItem="Sfk-QM-5Yp" secondAttribute="leading" constant="13" id="hh9-xK-xQF"/>
+                <constraint firstItem="Dk0-N5-pie" firstAttribute="trailing" secondItem="Sfk-QM-5Yp" secondAttribute="trailing" constant="-2" id="uba-3j-Fy8"/>
+            </constraints>
+            <size key="customSize" width="399" height="321"/>
+            <connections>
+                <outlet property="bg_cards" destination="Sfk-QM-5Yp" id="f8l-Cn-jWL"/>
+                <outlet property="image_select" destination="Dk0-N5-pie" id="EDZ-If-WEh"/>
+                <outlet property="lab_validity" destination="Ohd-pj-6AR" id="D0Z-U8-4da"/>
+            </connections>
+            <point key="canvasLocation" x="19.5" y="152.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="btn_monthly_card" width="223" height="148"/>
+        <image name="icon_cards_select" width="23" height="25"/>
+    </resources>
+</document>

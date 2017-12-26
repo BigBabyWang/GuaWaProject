@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="4082_方正粗圆_GBK.TTF">
+            <string>FZY4K--GBK1-0</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryCell" rowHeight="246" id="KGk-i7-Jjw" customClass="HistoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="539" height="246"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="539" height="245.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_history" translatesAutoresizingMaskIntoConstraints="NO" id="F83-gA-lkM">
+                        <rect key="frame" x="45.5" y="89" width="448" height="68"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="消耗金币" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIT-8F-k4c">
+                        <rect key="frame" x="110.5" y="96.5" width="48" height="15"/>
+                        <fontDescription key="fontDescription" name="FZY4K--GBK1-0" family="FZCuYuan-M03" pointSize="12"/>
+                        <color key="textColor" red="0.48627450979999998" green="0.61960784310000006" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加载中..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYL-2i-YAi">
+                        <rect key="frame" x="170.5" y="132" width="46" height="14.5"/>
+                        <fontDescription key="fontDescription" name="FZY4K--GBK1-0" family="FZCuYuan-M03" pointSize="12"/>
+                        <color key="textColor" red="0.30588235289999999" green="0.43137254899999999" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="history_fenge" translatesAutoresizingMaskIntoConstraints="NO" id="Dmd-LV-iB9">
+                        <rect key="frame" x="110.5" y="119.5" width="238" height="2"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加载中..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUY-Fu-yOj">
+                        <rect key="frame" x="298.5" y="97" width="46" height="14.5"/>
+                        <fontDescription key="fontDescription" name="FZY4K--GBK1-0" family="FZCuYuan-M03" pointSize="12"/>
+                        <color key="textColor" red="0.30588235289999999" green="0.43137254899999999" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_goods" translatesAutoresizingMaskIntoConstraints="NO" id="0Xr-8P-Mez">
+                        <rect key="frame" x="55.5" y="98" width="45" height="45"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="房间名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXh-3t-1mq">
+                        <rect key="frame" x="251.5" y="97" width="36" height="14.5"/>
+                        <fontDescription key="fontDescription" name="FZY4K--GBK1-0" family="FZCuYuan-M03" pointSize="12"/>
+                        <color key="textColor" red="0.48627450979999998" green="0.61960784310000006" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_res" translatesAutoresizingMaskIntoConstraints="NO" id="bEa-Ge-8fG">
+                        <rect key="frame" x="362.5" y="89" width="33" height="39"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加载中..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEX-ji-mJt">
+                        <rect key="frame" x="170.5" y="96.5" width="46" height="14.5"/>
+                        <fontDescription key="fontDescription" name="FZY4K--GBK1-0" family="FZCuYuan-M03" pointSize="12"/>
+                        <color key="textColor" red="0.30588235289999999" green="0.43137254899999999" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加载中" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6G-us-nsz">
+                        <rect key="frame" x="423.5" y="113.5" width="36" height="15"/>
+                        <fontDescription key="fontDescription" name="FZY4K--GBK1-0" family="FZCuYuan-M03" pointSize="12"/>
+                        <color key="textColor" red="1" green="0.47058823529411764" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_no_catch" translatesAutoresizingMaskIntoConstraints="NO" id="ai8-gi-gLS">
+                        <rect key="frame" x="422.5" y="114.5" width="37" height="13"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="游戏时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1l-hk-88j">
+                        <rect key="frame" x="110.5" y="131.5" width="48" height="15"/>
+                        <fontDescription key="fontDescription" name="FZY4K--GBK1-0" family="FZCuYuan-M03" pointSize="12"/>
+                        <color key="textColor" red="0.48627450979999998" green="0.61960784310000006" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="VUY-Fu-yOj" firstAttribute="centerY" secondItem="QXh-3t-1mq" secondAttribute="centerY" id="5Nw-ZA-7gn"/>
+                    <constraint firstItem="EYL-2i-YAi" firstAttribute="centerY" secondItem="y1l-hk-88j" secondAttribute="centerY" id="7Gg-eu-GhW"/>
+                    <constraint firstItem="QXh-3t-1mq" firstAttribute="centerY" secondItem="XIT-8F-k4c" secondAttribute="centerY" id="9gK-3d-TRj"/>
+                    <constraint firstItem="EYL-2i-YAi" firstAttribute="leading" secondItem="y1l-hk-88j" secondAttribute="trailing" constant="12" id="Fla-tp-jzM"/>
+                    <constraint firstItem="F83-gA-lkM" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Htt-GG-cDy"/>
+                    <constraint firstItem="y1l-hk-88j" firstAttribute="leading" secondItem="Dmd-LV-iB9" secondAttribute="leading" id="Kyx-0M-kB6"/>
+                    <constraint firstItem="G6G-us-nsz" firstAttribute="trailing" secondItem="F83-gA-lkM" secondAttribute="trailing" constant="-34" id="MiH-Ze-sKm"/>
+                    <constraint firstItem="ai8-gi-gLS" firstAttribute="centerY" secondItem="G6G-us-nsz" secondAttribute="centerY" id="Myu-8x-exm"/>
+                    <constraint firstItem="Dmd-LV-iB9" firstAttribute="top" secondItem="XIT-8F-k4c" secondAttribute="bottom" constant="8" id="QpR-Vj-4wp"/>
+                    <constraint firstItem="ai8-gi-gLS" firstAttribute="trailing" secondItem="G6G-us-nsz" secondAttribute="trailing" id="Z7J-A9-h5l"/>
+                    <constraint firstItem="0Xr-8P-Mez" firstAttribute="leading" secondItem="F83-gA-lkM" secondAttribute="leading" constant="10" id="aGc-ce-EbG"/>
+                    <constraint firstItem="bEa-Ge-8fG" firstAttribute="leading" secondItem="Dmd-LV-iB9" secondAttribute="trailing" constant="14" id="dYl-V6-ohG"/>
+                    <constraint firstItem="bEa-Ge-8fG" firstAttribute="top" secondItem="F83-gA-lkM" secondAttribute="top" id="gZY-Kp-OUP"/>
+                    <constraint firstItem="Dmd-LV-iB9" firstAttribute="leading" secondItem="0Xr-8P-Mez" secondAttribute="trailing" constant="10" id="kdr-y6-046"/>
+                    <constraint firstItem="XIT-8F-k4c" firstAttribute="leading" secondItem="Dmd-LV-iB9" secondAttribute="leading" id="lgT-TH-TyF"/>
+                    <constraint firstItem="0Xr-8P-Mez" firstAttribute="bottom" secondItem="F83-gA-lkM" secondAttribute="bottom" constant="-14" id="qwK-ET-mQG"/>
+                    <constraint firstItem="G6G-us-nsz" firstAttribute="centerY" secondItem="0Xr-8P-Mez" secondAttribute="centerY" id="rJs-8m-ZTR"/>
+                    <constraint firstItem="y1l-hk-88j" firstAttribute="top" secondItem="Dmd-LV-iB9" secondAttribute="bottom" constant="10" id="rVq-D9-oKP"/>
+                    <constraint firstItem="bEa-Ge-8fG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VUY-Fu-yOj" secondAttribute="trailing" constant="3" id="ri8-6w-Bex"/>
+                    <constraint firstItem="FEX-ji-mJt" firstAttribute="leading" secondItem="XIT-8F-k4c" secondAttribute="trailing" constant="12" id="tmi-y4-l8W"/>
+                    <constraint firstItem="FEX-ji-mJt" firstAttribute="centerY" secondItem="XIT-8F-k4c" secondAttribute="centerY" id="tvf-x2-d2C"/>
+                    <constraint firstItem="Dmd-LV-iB9" firstAttribute="centerY" secondItem="0Xr-8P-Mez" secondAttribute="centerY" id="v1I-Eq-yjw"/>
+                    <constraint firstItem="QXh-3t-1mq" firstAttribute="centerX" secondItem="F83-gA-lkM" secondAttribute="centerX" id="vOR-CJ-KHN"/>
+                    <constraint firstItem="F83-gA-lkM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="z8F-cy-V9c"/>
+                    <constraint firstItem="VUY-Fu-yOj" firstAttribute="leading" secondItem="QXh-3t-1mq" secondAttribute="trailing" constant="11" id="zKp-0e-BZw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="image_good" destination="0Xr-8P-Mez" id="AaO-0u-onq"/>
+                <outlet property="image_no_catch" destination="ai8-gi-gLS" id="5AI-3u-iIw"/>
+                <outlet property="lab_playTime" destination="EYL-2i-YAi" id="5jK-QG-pE4"/>
+                <outlet property="lab_result" destination="G6G-us-nsz" id="HJB-5d-pyW"/>
+                <outlet property="lab_roomName" destination="VUY-Fu-yOj" id="DTP-2W-a0f"/>
+                <outlet property="lab_userCoin" destination="FEX-ji-mJt" id="qhd-i4-Vqx"/>
+            </connections>
+            <point key="canvasLocation" x="-83.5" y="153"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg_goods" width="45" height="45"/>
+        <image name="bg_history" width="448" height="68"/>
+        <image name="history_fenge" width="238" height="2"/>
+        <image name="icon_no_catch" width="37" height="13"/>
+        <image name="icon_res" width="33" height="39"/>
+    </resources>
+</document>
