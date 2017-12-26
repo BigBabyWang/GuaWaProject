@@ -7,8 +7,11 @@
 //
 
 #import "HistoryViewController.h"
+#import "HistoryDetailViewController.h"
+
 #import "HistoryCell.h"
 #import "MHistory.h"
+
 @interface HistoryViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     
@@ -26,7 +29,7 @@
 }
 #pragma mark ------Set UI------
 - (void)setUI{
-    
+    _tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 #pragma mark ------Set Data------
 - (void)setData{
@@ -49,12 +52,12 @@
     return 1;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.tableData.count;
+    return 1;//self.tableData.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     HistoryCell * cell = [[HistoryCell alloc]initWithTableview:tableView];
-    MHistory * history = self.tableData[indexPath.row];
-    cell.history = history;
+//    MHistory * history = self.tableData[indexPath.row];
+//    cell.history = history;
 
     return cell;
 }
@@ -64,7 +67,19 @@
 }
 #pragma mark ------TableViewDelegate------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-   
+    HistoryDetailViewController * _vc = [HistoryDetailViewController new];
+    NSLog(@"%@",[self viewController].navigationController);
+//    [self.parentViewController.navigationController pushViewController:_vc animated:YES];
+}
+- (UIViewController *)viewController
+{
+    for (UIView* next = [self.view superview]; next; next = next.superview) {
+        UIResponder *nextResponder = [next nextResponder];
+        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)nextResponder;
+        }
+    }
+    return nil;
 }
 #pragma mark ------Button Action------
 - (void)didReceiveMemoryWarning {

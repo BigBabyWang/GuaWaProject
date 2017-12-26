@@ -135,6 +135,8 @@
 		3EDDE6231FE3AF5F00B601D1 /* btn_jinruyouxi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDDE6211FE3AF5E00B601D1 /* btn_jinruyouxi@2x.png */; };
 		3EDDE6241FE3AF5F00B601D1 /* btn_jinruyouxi@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDDE6221FE3AF5F00B601D1 /* btn_jinruyouxi@3x.png */; };
 		3EDDE62F1FE3E43800B601D1 /* UserCenterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDDE62E1FE3E43800B601D1 /* UserCenterButton.m */; };
+		3EF214F41FF21BA000E495A5 /* HistoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF214F21FF21BA000E495A5 /* HistoryDetailViewController.m */; };
+		3EF214F51FF21BA000E495A5 /* HistoryDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EF214F31FF21BA000E495A5 /* HistoryDetailViewController.xib */; };
 		3EF4A4261FE0D67900EBB069 /* GoodsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF4A4251FE0D67900EBB069 /* GoodsInfo.m */; };
 		3EF4A4281FE0D7AF00EBB069 /* GoodsInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EF4A4271FE0D7AF00EBB069 /* GoodsInfo.xib */; };
 		3EFE82BC1FDE6B880002A104 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFE82BB1FDE6B870002A104 /* UserNotifications.framework */; };
@@ -373,6 +375,9 @@
 		3EDDE6221FE3AF5F00B601D1 /* btn_jinruyouxi@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_jinruyouxi@3x.png"; sourceTree = "<group>"; };
 		3EDDE62D1FE3E43800B601D1 /* UserCenterButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserCenterButton.h; sourceTree = "<group>"; };
 		3EDDE62E1FE3E43800B601D1 /* UserCenterButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserCenterButton.m; sourceTree = "<group>"; };
+		3EF214F11FF21B9F00E495A5 /* HistoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryDetailViewController.h; sourceTree = "<group>"; };
+		3EF214F21FF21BA000E495A5 /* HistoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryDetailViewController.m; sourceTree = "<group>"; };
+		3EF214F31FF21BA000E495A5 /* HistoryDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryDetailViewController.xib; sourceTree = "<group>"; };
 		3EF4A4241FE0D67900EBB069 /* GoodsInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodsInfo.h; sourceTree = "<group>"; };
 		3EF4A4251FE0D67900EBB069 /* GoodsInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodsInfo.m; sourceTree = "<group>"; };
 		3EF4A4271FE0D7AF00EBB069 /* GoodsInfo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoodsInfo.xib; sourceTree = "<group>"; };
@@ -466,6 +471,9 @@
 				3E2471A51FD53C03000D5254 /* HistoryViewController.h */,
 				3E2471A61FD53C03000D5254 /* HistoryViewController.m */,
 				3E2471A71FD53C03000D5254 /* HistoryViewController.xib */,
+				3EF214F11FF21B9F00E495A5 /* HistoryDetailViewController.h */,
+				3EF214F21FF21BA000E495A5 /* HistoryDetailViewController.m */,
+				3EF214F31FF21BA000E495A5 /* HistoryDetailViewController.xib */,
 			);
 			path = UserCenter;
 			sourceTree = "<group>";
@@ -1022,6 +1030,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EF214F51FF21BA000E495A5 /* HistoryDetailViewController.xib in Resources */,
 				3E8CF07A1FED117E00031C3F /* MyLocationCell.xib in Resources */,
 				3EDDE6241FE3AF5F00B601D1 /* btn_jinruyouxi@3x.png in Resources */,
 				3E9928E51FEA2EE8001B11ED /* MyAccountCell.xib in Resources */,
@@ -1203,6 +1212,7 @@
 				3E8848061FE8DB1900873A15 /* OpenUDID.m in Sources */,
 				3E3C1E761FBDB4C300B86B97 /* UIApplication+SSToolkitAdditions.m in Sources */,
 				3E3C1E501FBDB25300B86B97 /* BusinessEngine.m in Sources */,
+				3EF214F41FF21BA000E495A5 /* HistoryDetailViewController.m in Sources */,
 				3E3C1E741FBDB4C300B86B97 /* NSData+SSToolkitAdditions.m in Sources */,
 				3E2471941FD53B7B000D5254 /* OrderListViewController.m in Sources */,
 				3EDDE62F1FE3E43800B601D1 /* UserCenterButton.m in Sources */,
