@@ -69,11 +69,7 @@
         self.bContentScroll.contentSize = contentSize;
     }
 }
-//- (void)viewDidAppear:(BOOL)animated
-//{
-//    [super viewDidAppear:animated];
-//    [[EIMService sharedEIMService] setChatDelegate:self];
-//}
+
 - ( UIStatusBarStyle )preferredStatusBarStyle
 {
     // 白色样式

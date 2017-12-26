@@ -56,6 +56,7 @@
     
     UserInfoViewController *userInfoVC= [[UserInfoViewController alloc]init];
     userInfoVC.title=@"基本资料";
+    
     [controllerMutableArr addObject:userInfoVC];
     
     OrderListViewController *orderListVC= [[ OrderListViewController alloc]init];
