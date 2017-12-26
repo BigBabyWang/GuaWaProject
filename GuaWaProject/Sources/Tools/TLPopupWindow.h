@@ -98,4 +98,7 @@ typedef NS_ENUM(NSUInteger, operationType) {
 
 - (instancetype)initWithCustomView:(UIView *)customView;
 
+///推荐邀请弹窗配置UIView
+- (instancetype)initWithRecommendOrInvideView:(UIView *)customView;
+
 @end

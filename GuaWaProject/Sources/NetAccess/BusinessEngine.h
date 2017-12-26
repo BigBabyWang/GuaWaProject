@@ -26,7 +26,6 @@ typedef void (^ResultResponseBlock)(MResult* res);
 -(id) initWithDefaultSettings;
 
 #pragma mark - 微信登录
-
 -(MKNetworkOperation*) weChatLogin:(NSDictionary*) WeChatDic
                completionHandler:(ResultResponseBlock) completion
                     errorHandler:(MKNKErrorBlock) errorBlock;

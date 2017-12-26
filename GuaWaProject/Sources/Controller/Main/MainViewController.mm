@@ -148,6 +148,35 @@
     [popup show:YES];
 
 }
+
+- (IBAction)btnRecommendOrInvideAction:(UIButton *)sender {
+    
+    UINib *nib = [UINib nibWithNibName:@"LocationView" bundle:nil];
+    LocationView * goodInfo = [nib instantiateWithOwner:nil options:nil].firstObject;
+    //    UINib *nib = [UINib nibWithNibName:@"GoodsInfo" bundle:nil];
+    //    GoodsInfo * goodInfo = [nib instantiateWithOwner:nil options:nil].firstObject;
+    TLPopupWindow * popup = [[TLPopupWindow alloc]initWithCustomView:goodInfo];
+    goodInfo.cancel = ^{
+        [popup dismiss];
+    };
+    goodInfo.save = ^(NSDictionary * locationDic) {
+        [self.busEngine addLocation:locationDic completionHandler:^(MResult *res) {
+            if (res.isSuccess) {
+                
+            }
+        } errorHandler:^(NSError *error) {
+            ERROR_NET
+        }];
+    };
+    //    [popup setHideWhenTapOutside:YES];
+    [popup show:YES];
+
+    
+}
+
+
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

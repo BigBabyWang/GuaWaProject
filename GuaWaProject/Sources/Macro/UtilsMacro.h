@@ -165,4 +165,46 @@ return shared##className; \
 //快速照片
 #define SystemQuickImage(image)  [UIImage imageNamed:image]
 #define COLOR(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+
+// --- 代码块引用
+//弱引用（代码块）
+#define WeakSelf(type)  __weak typeof(type) weak##type = type;
+//强引用（代码块）
+#define StrongSelf(type)  __strong typeof(type) strong##type = type;
+
+
+// =========尺寸==============
+
+//设备宽高
+#define kIphone_W [UIScreen mainScreen].bounds.size.width
+#define kIphone_H [UIScreen mainScreen].bounds.size.height
+//屏幕宽高
+#define kScreen_W self.view.frame.size.width
+#define kScreen_H self.view.frame.size.height
+//View宽高
+#define  kView_H  self.frame.size.height
+#define  kView_W  self.frame.size.width
+
+#define kFrame(x,y,w,h)         CGRectMake((x), (y), (w), (h))
+#define kEdgeInsets(top,left,bottom,right) UIEdgeInsetsMake((top),(left),(left),(right))
+#define kFont(x) [UIFont systemFontOfSize:x]
+#define kImage(imgStr) [UIImage imageNamed:imgStr]
+#define kSize(w,h) CGSizeMake(w,h)
+#define  kPoint(x,y)             CGPointMake((x), (y))
+
+// 适配比例 iPhone5 为标准  等比例缩放宽高位置 4（320*480） 5（320*568）6（375*667）6+（414*736）
+#define kScale_Font(x) [UIFont systemFontOfSize:(x*kIphone_W/375)]
+#define kScale_W(w) ((w)*kIphone_W/375)
+#define kScale_H(h) ((h)*(kIphone_H == 480 ? 667:kIphone_H)/667)
+#define kScale_Frame(x,y,w,h)  CGRectMake(((x)*/375), ((y)*(kIphone_H == 480 ? 667:kIphone_H)/667), ((w)*kIphone_W/375), ((h)*(kIphone_H == 480 ? 667:kIphone_H)/667))
+
+//两侧默认间距
+#define kDef_margin 10
+//获取RGBA颜色
+#define kRGBAColor(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+//获取rgb颜色
+#define kRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+//16进制颜色转换
+#define kColorFromHex(s) [UIColor colorWithRed:(((s & 0xFF0000) >> 16))/255.0 green:(((s &0xFF00) >>8))/255.0 blue:((s &0xFF))/255.0 alpha:1.0]
+
 #endif

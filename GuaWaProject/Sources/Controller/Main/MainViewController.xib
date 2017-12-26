@@ -55,6 +55,9 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <state key="normal" backgroundImage="btn_duijiang"/>
                     <state key="highlighted" backgroundImage="btn_duijiang_xuanzhong"/>
+                    <connections>
+                        <action selector="btnRecommendOrInvideAction:" destination="-1" eventType="touchUpInside" id="Bcv-c3-BC1"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyb-4d-KfL">
                     <rect key="frame" x="0.0" y="95" width="56" height="225"/>

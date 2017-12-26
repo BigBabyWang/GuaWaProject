@@ -212,6 +212,24 @@ CGSize getScreenSize() {
     return self;
 }
 
+- (instancetype)initWithRecommendOrInvideView:(UIView *)customView {
+    self = [super initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    if (self) {
+        //        self.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
+        self.backgroundColor = [UIColor clearColor];
+        [self addSubview:customView];
+        UIImage * image = [UIImage imageNamed:@"kuangRecommended"];
+        [customView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.equalTo(self.mas_centerX);
+            make.centerY.equalTo(self.mas_centerY);
+            make.height.equalTo(@(image.size.height));
+            make.width.equalTo(@(image.size.width));
+        }];
+    }
+    return self;
+}
+
+
 #pragma mark - Private methods
 
 - (void)commonInit {
